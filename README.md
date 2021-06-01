@@ -11,12 +11,15 @@ Code에서는 Resource의 Dictionary를 통해 접근할 수 있다.(Resource["n
    
 Style
 ---
-Resource에서 정의되며 Implied Style와 Explicit Style로 구분(Key의 유무)된다.
+> Resource에서 정의되며 Implied Style와 Explicit Style로 구분(Key의 유무)된다.
+   
+### Type of Style
 + Implied Style
     + TargetType을 통해 대상을 한정한다. Type에 전체적으로 적용된다.
 + Explicit Style
     + Key를 통해 대상을 한정한다. Key를 가지고 있는 Element만 적용된다.
-*개별 속성 정의 - Elements.Style을 사용하는 것이다.
++ Other
+    + Element.Style을 통한 정의. 개별 속성
 
 ### Inheritance (BasedOn)
 > Key를 통해 정의된 Style을 다른 스타일에서 상속하는 것.
@@ -45,8 +48,8 @@ Resource에서 정의되며 Implied Style와 Explicit Style로 구분(Key의 유
 
 Dependency Property
 ---
-DP라고도 하며, 의존 프로퍼티라고 말하기도 한다. 기능적으로는 해당 값이 바뀌면 자동적으로 View에서 업데이트 해주는 것이다.
+> DP라고도 하며, 의존 프로퍼티라고 말하기도 한다. 값이 바뀌면 View에서 업데이트 해주는 것이다.
 
-의존 프로퍼티는 항상 static readonly이다. 의존프로퍼티 값을 등록하는 방법은 아래와 같다
-
-public static readonly DependencyProperty propertyname = DependencyPorperty.Register("propertyname", typeof(type), typeof(owner's class), new PropertyMetaData(초깃값))이다.
+Code
+> public static readonly DependencyProperty propertyname = DependencyPorperty.Register("propertyname", typeof(type), typeof(owner's class), new PropertyMetaData(초깃값))이다.
+>  의존 프로퍼티는 항상 static readonly이다. 의존프로퍼티 값을 등록하는 방법은 아래와 같다
