@@ -50,6 +50,7 @@ Dependency Property
 ---
 > DP라고도 하며, 의존 프로퍼티라고 말하기도 한다. 값이 바뀌면 View에서 업데이트 해주는 것이다.
 
-Code
+Register DP
 > public static readonly DependencyProperty propertyname = DependencyPorperty.Register("propertyname", typeof(type), typeof(owner's class), new PropertyMetaData(초깃값))이다.
->  의존 프로퍼티는 항상 static readonly이다. 의존프로퍼티 값을 등록하는 방법은 아래와 같다
+   
+>  의존 프로퍼티는 항상 static readonly이다. 
