@@ -2,8 +2,7 @@ WPF-Basic
 ===
 Resource
 ---
-Resource는 두가지 종류로 나뉜다. Statistic Resource와 Dynamic Resource로 구분된다. 
-Code에서는 Resource의 Dictionary를 통해 접근할 수 있다.(Resource["name"])   
+> Statistic Resource와 Dynamic Resource로 구분되며 Dictionary이다.(Resource["name"])   
 + Implied Resource
     + defined in Compile Time
 + Explicit Resource
